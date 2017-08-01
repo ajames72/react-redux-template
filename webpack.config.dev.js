@@ -13,7 +13,7 @@ export default {
   entry: [
     'eventsource-polyfill', //neccessary for hot reloading with IE
     'webpack-hot-middleware/client?reload=true', //note reloads the page if hot reloading fails
-    './src/index' //js entry point
+    './src/index.jsx' //jsx entry point
   ],
   // bundling target configuration, bundling specifically for web
   target: 'web',
@@ -36,6 +36,9 @@ export default {
     }),
     new webpack.DefinePlugin(GLOBALS)
   ],
+  resolve: {
+    extensions: ['.js', '.jsx', '.css', '.scss']
+  },
   // Tell Webpacks the types of files we want to handle ... webapcks only knows how to handle js files natively
   module: {
     rules: [
