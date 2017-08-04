@@ -1,1 +1,1 @@
-export const ACTION_TYPE = 'ACTION_TYPE';
+export const START_ACTION = 'START_ACTION';

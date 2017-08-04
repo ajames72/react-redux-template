@@ -1,10 +1,12 @@
 import {combineReducers} from 'redux';
+import appSettings from './AppReducer';
 
-/**
- * using ES6 shorthand property names
- */
+//-----------------------------//
+// Add reducers as neccessary  //
+//-----------------------------//
+
 const rootReducer = combineReducers({
-  
+  appSettings
 });
 
 export default rootReducer;
