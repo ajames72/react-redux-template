@@ -9,3 +9,9 @@ _(only dev building currently, prod building pending)_
 ## Running Development Server
 
 Navigate to the project directory root and run (npm start -s)
+
+## Configure Mocha
+
+    "test": "mocha --reporter spec tools/testSetup.js \"src/**/*.test.js*\""
+
+spec || progress

@@ -5,6 +5,11 @@ import configureMockStore from 'redux-mock-store';
 import * as types from './ActionTypes';
 import * as AppActions from './AppActions';
 
+//----------------------------------------------//
+// These tests should test for initial state,   //
+// then state after action                      //
+//----------------------------------------------//
+
 describe('AppActions', () => {
   
   /**
