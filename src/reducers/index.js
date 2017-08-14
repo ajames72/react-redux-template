@@ -1,12 +1,15 @@
 import {combineReducers} from 'redux';
-import appSettings from './AppReducer';
+import params from './AppReducer';
 
-//-----------------------------//
-// Add reducers as neccessary  //
-//-----------------------------//
-
+//----------------------------------------------------//
+// Add reducers as neccessary.                        //
+// A popular convention is to name reducers           //
+// after the state slices they manage, so             //
+// you can use ES6 property shorthand notation        //
+// http://redux.js.org/docs/api/combineReducers.html  //
+//----------------------------------------------------//
 const rootReducer = combineReducers({
-  appSettings
+  params
 });
 
 export default rootReducer;

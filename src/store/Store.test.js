@@ -28,7 +28,7 @@ describe('Store', () => {
     store.dispatch(action);
     
     //test property from the rootReducer
-    const state = store.getState().appSettings;
+    const state = store.getState().params;
     
     expect(state).toEqual({
       setting: 'my_app_setting'

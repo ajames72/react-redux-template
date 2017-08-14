@@ -11,7 +11,7 @@ class Home extends React.Component {
 
 function mapStateToProps(state, ownProps) {
   return {
-    params: state.appSettings
+    params: state.params
   }
 }
 
